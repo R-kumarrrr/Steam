@@ -1,0 +1,144 @@
+/* Apply a reset to remove default padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./image/store_home_share.jpg') center/cover no-repeat; 
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    padding-top: 60px;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#games {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 230vh;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin: 10px;
+    image-rendering:optimizeQuality;
+}
+
+.image:hover {
+    transform: scale(1.05) ;
+}
+
+nav {
+    height: 60px;
+    width: 100vw;
+    background-color: #171d25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e7e7e7;
+    padding: 0 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: lightslategrey;
+    transform: scale(1.5);
+}
+
+.logo img {
+    height: 140px;
+    width: 150px;
+    margin: 0 20px;
+}
+
+.search {
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search span a {
+    margin-left: 3%;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0 15px;
+}
+
+.search span a:hover {
+    color: lightslategray;
+    transform: scale(1.50);
+}
+
+#search-box {
+    height: 40px;
+    width: 450px;
+    border: none; 
+    border-radius: 20px;
+    background: #171d25;
+    padding: 5px 10px;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#search-box:hover {
+    background-color: #2a2a2a;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.my_h2 {
+    color: whitesmoke;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.my-div-js a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background-color: #171d25;
+    padding: 10px 0;
+    color: #e7e7e7;
+}
+
+.heart {
+    color: red;
+}
